@@ -19,7 +19,7 @@ void InputLoop() {
                 printf("Offset: 0x%llX\n", offset);
             }
             catch (...) {
-                printf("Error or pattern is invalid\n");
+                printf("Error, probably pattern is invalid\n");
             }
         }
     }
