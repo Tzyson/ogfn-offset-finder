@@ -27,7 +27,7 @@ void InputLoop() {
 
 void Main() {
     AllocConsole();
-    SetConsoleTitleA("TZY OFFSET FINDER - https://github.com/tzyson/tzy-offset-finder");
+    SetConsoleTitleA("TZY OFFSET FINDER - https://github.com/tzyson/ogfn-offset-finder");
     FILE* f_out; FILE* f_err; FILE* f_in;
     freopen_s(&f_out, "CONOUT$", "w", stdout);
     freopen_s(&f_err, "NUL", "w", stderr);
