@@ -10,7 +10,6 @@ uint64_t GetPatternOffset(const std::string& pattern) {
 void InputLoop() {
     char buffer[256];
     while (true) {
-        printf("Enter pattern: ");
         if (fgets(buffer, sizeof(buffer), stdin)) {
             std::string pattern(buffer);
             pattern.erase(std::remove(pattern.begin(), pattern.end(), '\n'), pattern.end());
