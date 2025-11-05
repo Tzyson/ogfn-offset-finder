@@ -26,8 +26,10 @@ void InputLoop() {
 
 void Main() {
     AllocConsole();
-    SetConsoleTitleA("TZY OFFSET FINDER - https://github.com/tzyson/ogfn-offset-finder");
-    FILE* f_out; FILE* f_err; FILE* f_in;
+    SetConsoleTitleA("TZY OFFSET FINDER | https://github.com/tzyson/ogfn-offset-finder");
+    FILE* f_out;
+    FILE* f_err;
+    FILE* f_in;
     freopen_s(&f_out, "CONOUT$", "w", stdout);
     freopen_s(&f_err, "NUL", "w", stderr);
     freopen_s(&f_in, "CONIN$", "r", stdin);
@@ -37,7 +39,7 @@ void Main() {
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     switch (ul_reason_for_call) {
     case DLL_PROCESS_ATTACH:
-        std::thread(Main).detach();
+        thread(Main).detach();
         break;
     case DLL_PROCESS_DETACH:
         break;

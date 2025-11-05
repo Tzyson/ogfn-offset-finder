@@ -8,6 +8,8 @@
 #define PCH_H
 
 // add headers that you want to pre-compile here
+// 
+// i just pasted all includes from my gs, so dont mind all those unused ones.
 #include <thread>
 #include <string>
 #include <sstream>
